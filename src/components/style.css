@@ -1,0 +1,57 @@
+
+
+.card-inner{
+    position: relative;
+    perspective: 1000px;
+    height: 700px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+ 
+  transition: transform 0.6s;
+}
+.card-front{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 700px;
+   height: 100%;
+    z-index: 2;
+    border-radius: 42.51px;
+    background: linear-gradient(222.94deg, #051A91 -4.31%, #061C93 14.41%, #2284F1 81.88%, #1F80EB 103.81%)
+}
+
+.card-back{
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+    width: 700px;
+    border-radius: 42.51px;
+    transform: rotateY(180deg);
+    background: linear-gradient(222.94deg, #071844 -4.31%, #071844 -0.03%, #2D87B6 84.9%, #2D87B6 103.81%);
+
+
+
+
+}
+
+.card-inner.is-flipped  {
+    transform: rotateY(180deg); 
+  }
+.controls{
+    flex: 10%;
+}
+
+.btn{
+    background: linear-gradient(180deg, #06286E 0%, #164EC0 100%);
+
+}
+.faq-container .title{
+    background-image: linear-gradient(180deg, #06286E 0%, #164EC0 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.text-container{
+    border: 1px solid black
+}
+
